@@ -1,0 +1,11 @@
+{
+  "name": "bloggingwebsite",
+  "version": "1.0.0",
+  "description": "This is a blogging website developed using EJS, Node, Express and MongoDb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
