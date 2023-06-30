@@ -6,6 +6,14 @@ router.get("/signin", (req, res) => {
   return res.render("signin");
 });
 
+router.post("/signin", (req, res) => {
+  const { email, password } = req.body;
+  const user = User.matchPassword(email, password);
+
+  console.log('User' , user);
+  return res.render("home");
+});
+
 router.get("/signup", (req, res) => {
   return res.render("signup");
 });
