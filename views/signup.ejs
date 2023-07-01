@@ -2,16 +2,15 @@
 <html lang="en">
   <head>
     <%- include('./partials/head') %>
-    <title>Sign Up</title>
+    <title>Signup</title>
   </head>
   <body>
-    <%- include('./partials/Navbar') %>
-    <div class="container mt-5">
+    <%- include('./partials/nav') %>
+
+    <div class="container mt-4">
       <form action="/user/signup" method="post">
         <div class="mb-3">
-          <label for="fullName" class="form-label"
-            >Full Name</label
-          >
+          <label for="fullName" class="form-label">Full Name</label>
           <input
             type="text"
             class="form-control"
@@ -38,21 +37,17 @@
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input
-            type="password"
             name="password"
+            type="password"
             class="form-control"
             id="exampleInputPassword1"
           />
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >You have read our <a href="#">Terms & Conditions</a></label
-          >
-        </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
+
     <%- include('./partials/scripts') %>
   </body>
 </html>
