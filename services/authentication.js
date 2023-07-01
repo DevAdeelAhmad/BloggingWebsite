@@ -1,6 +1,6 @@
 const JWT = require("jsonwebtoken");
 
-const secret = "$pidermanisnotman786/";
+const secret = "$uperMan@123";
 
 function createTokenForUser(user) {
   const payload = {
@@ -14,8 +14,11 @@ function createTokenForUser(user) {
 }
 
 function validateToken(token) {
-  const payload = JWT.verify(payload, secret);
+  const payload = JWT.verify(token, secret);
   return payload;
 }
 
-module.exports = { createTokenForUser, validateToken };
+module.exports = {
+  createTokenForUser,
+  validateToken,
+};
